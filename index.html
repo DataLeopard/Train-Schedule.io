@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Train Schedule</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+    crossorigin="anonymous">
+</head>
+
+
+<script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyB8p-Fmm0DWi5rw7Jy-t-kHKsijS-OR8zc",
+    authDomain: "train-schedule-e61b9.firebaseapp.com",
+    databaseURL: "https://train-schedule-e61b9.firebaseio.com",
+    projectId: "train-schedule-e61b9",
+    storageBucket: "train-schedule-e61b9.appspot.com",
+    messagingSenderId: "334264905059"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+<script src="train.js"></script>
+
+<body>
+
+</script>
+
+  
+  <div class="container">
+    <div class="jumbotron">
+      <h3>Train Schedule</h3>
+      <p>Below are the scheduled trains for this Station </div>
+  </div>
+
+
+  <div class="container">
+    <h1>Train Schedule</h1>
+    <p>Note: Below is column w VAR to be populated</p>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Train Name</th>
+          <th>Destination</th>
+          <th>First Train</th>
+          <th>Train Frequency</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Blue Line</td>
+          <td>London</td>
+          <td>firstTrain</td>
+          <th>trainFrequency</th>
+        </tr>
+        <tr>
+          <td>Red Line</td>
+          <td>Rome</td>
+          <td>firstTrain</td>
+          <th>trainFrequency</th>
+        </tr>
+        <tr>
+          <td>Green Line</td>
+          <td>Paris</td>
+          <td>firstTrain</td>
+          <th>trainFrequency</th>
+        </tr>
+        <tr>
+          <td>Orange Line</td>
+          <td>Dallas</td>
+          <td>firstTrain</td>
+          <th>trainFrequency</th>
+          </t </tbody>
+    </table>
+  </div>
+
+  <div class="jumbotron">
+    <h1>Add Train</h1>
+    <form>
+      <div class="form-group">
+        <div class="col-*-*"></div>
+        <div class="col-*-*"></div>
+
+        <label for="exampleFormControlInput1">Train Name:</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlSelect2">Destination:</label>
+        <textarea multiple class="form-control" id="exampleFormControlInput3">
+        </textarea>
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlInput3">First Train:</label>
+        <textarea class="form-control" id="exampleFormControlInput4" rows="1"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlInput4">Frequncy:</label>
+        <textarea class="form-control" id="exampleFormControlInput4" rows="1"></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary" id="submitButton">Submit New Train </button>
+
+    </form>
+   
+  </div>
+  <style type="text/css">
+    h1,
+    h2 {
+      font-size: 20px;
+      background-color: brown;
+      color: tan;
+      padding-left: 10px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    h3 {
+      font-size: 40px;
+      background-color: rgb(112, 10, 10);
+      color: tan;
+      padding-left: 10px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    .jumbotron {
+      margin: 30px;
+      border-style: solid;
+      border-color: gold;
+    }
+  </style>
+</body>
+
+</html>
